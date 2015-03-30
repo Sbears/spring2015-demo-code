@@ -1,0 +1,28 @@
+/* Select by tagname */
+h1 {
+  color: red;
+}
+
+/* Select by classname */
+.header-alt {
+  border-bottom: 2px solid red;
+}
+
+/* Select a single element by its ID */
+#header-primary {
+  text-transform: uppercase;
+}
+
+/* Select all H1s AND all .header-alts */
+h1,
+.header-alt {
+  border-top: 2px solid blue;
+}
+
+/* Use descendent selectors */
+div p {
+  font-style: italic;
+}
+
+/* Target all p's and a's inside of divs */
+div p, div a {}
