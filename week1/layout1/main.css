@@ -1,0 +1,122 @@
+/*
+  Swap in the new box model.
+  Use the * selector sparingly!
+
+  This new box model will allow us to understand
+  how width affects elements a lot easier. In this
+  case, width will CONTAIN content, padding, and border,
+  while in the default box-sizing, width will only CONTAIN
+  the content of the element (i.e. the text)
+*/
+* {
+  box-sizing: border-box;
+}
+
+/* Demonstration of the new box model.
+  Try toggling the box-sizing on and off
+  in the dev tools to see how the width
+  changes */
+.box-model {
+  margin: 20px;
+  padding: 20px;
+  background-color: red;
+  border: 5px solid black;
+
+  /* Set a width for demo purposes */
+  width: 200px;
+}
+
+/* Position:
+    There are 4 different values for position:
+    static (default), fixed (relative to viewport),
+    absolute (relative to document or positioned parent),
+    and relative (sets an anchor point) */
+.outer-container {
+  margin: 20px;
+  padding: 20px;
+  background-color: red;
+}
+.inner-container {
+  margin: 20px;
+  padding: 20px;
+  background-color: green;
+}
+.inner-content {
+  margin: 20px;
+  padding: 20px;
+  background-color: grey;
+
+  /* Try experimenting with the different
+  types of positioning here! Don't forget
+  to set the "top" and "left" properties too */
+}
+
+/* "Stacking" elements */
+.container {
+  position: relative;
+}
+.back {
+  position: absolute;
+  top: 0;
+}
+
+/* Display:
+    There are 4 different values for display:
+    none (hides the element), block (attempts to fill the
+    width of the page), inline (tries to render it like text),
+    and inline-block (takes parts of both block and inline) */
+.display-content {
+  /* display: inline; */
+  padding: 20px;
+  margin: 20px;
+  background-color: red;
+  border: 2px solid black;
+}
+
+.specific-word {
+  display: inline-block;
+  padding: 10px;
+  background-color: grey;
+}
+
+
+/* Floats:
+    You can either float things left, right, or none at all.
+    Floats can be "cleared", as in, other content will
+    calculate the necessary amount to move below any floated
+    items. */
+.float-container {
+  padding: 20px;
+  margin: 20px;
+  border: 1px solid black;
+  background-color: green;
+
+  overflow: hidden;
+}
+
+.float-content {
+  padding: 20px;
+  margin: 20px;
+  border: 1px solid black;
+  background-color: peachpuff;
+  width: 100px;
+
+  /* float: left */
+  float: right;
+}
+
+.float-special {
+  /* both, left, right */
+  clear: both;
+}
+
+
+
+/* Demo of Block Formatting Context */
+.media-image {
+  float: left;
+  margin-right: 20px;
+}
+.media-content {
+  overflow: hidden;
+}
