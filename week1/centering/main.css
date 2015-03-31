@@ -1,0 +1,144 @@
+/*
+  Centering for block elements:
+    Requires that width be set
+ */
+.block-center {
+  /* cosmetic stuff */
+  background-color: grey;
+  padding: 20px;
+  
+  /* required */
+  width: 300px;
+
+  /*
+    margin: trbl;
+    margin: tb lr;
+    margin: t r b l;
+   */
+  margin: 0 auto;
+}
+
+
+/* Inline Centering: */
+.inline-center {
+  text-align: center;
+}
+
+
+/* Line Height: */
+.line-center {
+  background-color: grey;
+  line-height: 200px;
+}
+
+
+/* Table Centering: */
+.table-outer {
+  /* cosmetic */
+  background-color: grey;
+  height: 200px;
+  width: 100%;
+
+  display: table;
+}
+
+.table-inner {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+
+/* CSS3: */
+.css3-outer {
+  height: 200px;
+  background-color: grey;
+  
+  /* Set an anchor point for the child div */
+  position: relative;
+}
+
+.css3-inner {
+  position: absolute;
+  top: 50%;
+
+  /* Pull the element up by half the height */
+  transform: translateY(-50%);
+}
+
+
+/* Stretching: */
+.stretching-outer {
+  height: 200px;
+  background-color: grey;
+  position: relative;
+}
+
+.stretching-inner {
+  background-color: green;
+  position: absolute;
+  top: 20px;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+}
+
+
+/* Stretching with Width */
+.stretching-width-outer {
+  height: 200px;
+  background-color: grey;
+  position: relative;
+}
+
+.stretching-width-inner {
+  background-color: green;
+  position: absolute;
+  top: 20px;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+  
+  width: 200px;
+  margin: 0 auto;
+}
+
+
+/* Padding: */
+.padding-outer {
+  height: 200px;
+  background-color: grey;
+
+  padding: 30px;
+}
+
+.padding-inner {
+  background-color: green;
+  /* help make the element fill the space */
+  height: 100%;
+}
+
+
+/* Negative Margins: */
+.margin-outer {
+  height: 200px;
+  background-color: grey;
+
+  /* set an anchor context */
+  position: relative;
+}
+
+.margin-inner {
+  background-color: green;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  
+  width: 200px;
+  height: 100px;
+  
+  /* negative half width */
+  margin-left: -100px;
+  
+  /* negative half height */
+  margin-top: -50px;
+}
