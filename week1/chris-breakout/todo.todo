@@ -1,0 +1,11 @@
+To Cover:
+  ✔ Buttons (with centering text) [single element] @done(2015-04-01 09:56) @project(To Cover)
+  ✔ CSS Positions (absolute*, fixed, relative*) @done(2015-04-01 10:31) @project(To Cover)
+  ✔ Pseudo classes (specificity) @done(2015-04-01 09:56) @project(To Cover)
+  ✔ Selectors (>, " ", ",", #, ., :) @done(2015-04-01 10:11) @project(To Cover)
+  ✘ Box-model @cancelled(2015-04-01 10:40) @project(To Cover)
+  ✔ Terminal workflows (customizing) @done(2015-04-01 10:35) @project(To Cover)
+  ✔ CSS Architecture tips @done(2015-04-01 10:40) @project(To Cover)
+  ✔ Preprocessors (less, sass, scss, stylus, coffeescript, jade...) @done(2015-04-01 10:39) @project(To Cover)
+  ✔ What is react? @done(2015-04-01 10:44) @project(To Cover)
+  ✘ Git branching @cancelled(2015-04-01 10:44) @project(To Cover)

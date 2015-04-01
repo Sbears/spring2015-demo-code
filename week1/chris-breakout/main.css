@@ -1,0 +1,63 @@
+.button {
+  text-decoration: none;
+  color: #000;
+  background-color: #999;
+  border: 1px solid #666;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+
+.button-primary {
+  background-color: blue;
+  color: white;
+}
+
+
+/*
+
+CSS Selectors:
+
+  div {}
+
+  .primary {}
+
+  div.primary {}
+    <div class="primary">...</div>
+
+  div.primary,
+  div.secondary {}
+
+  div .primary {}
+    <div> <a class="primary">...</a> </div>
+
+  ul > li {}
+
+  .portfolio-item:hover .back {}
+
+ */
+
+
+/* Positioning: */
+.pos-container {
+  background-color: red;
+  padding: 20px;
+  border: 1px solid black;
+}
+.pos-inner {
+  background-color: green;
+  padding: 20px;
+  border: 1px solid black;
+
+  /* Set the anchor point for
+  any absolutely positioned children*/
+  position: relative;
+}
+.pos-content {
+  background-color: grey;
+  padding: 20px;
+  border: 1px solid black;
+
+  position: absolute;
+  top:0;
+  right:0;
+}
