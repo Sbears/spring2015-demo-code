@@ -1,0 +1,95 @@
+/* Setup for the main header (h1) */
+#main-header {
+  color: peachpuff;
+}
+
+.primary-header {
+  color: red;
+}
+
+h1 {
+  color: blue;
+}
+
+
+/* Setup for the H3 */
+.header {
+  color: grey;
+  text-decoration: underline;
+}
+
+.header:hover {
+  color: red;
+}
+
+.header-subheader {
+  font-style: italic;
+}
+
+
+/* Testing for paragraphs */
+
+/* CAUTION: DON'T DO THIS!! */
+p {
+  color: tomato !important;
+}
+
+.not-tomato {
+  color: gold !important;
+}
+
+
+/* Additional Selectors: */
+
+/*
+  .navigation .nav-item {}
+    <ul class="navigation">
+      <li class="nav-item">
+        <div class="nav-item">...
+
+  .navigation.nav-item {}
+    <div class="navigation nav-item">
+
+  .navigation > * {}
+ */
+
+/* Attribute selector (direct match) */
+input[type=text] {
+  border: 3px solid orange;
+}
+
+/* Find with whole words (space-separated) */
+[class~=header] {
+  border: 2px solid blue;
+}
+
+/* Find with partial match */
+[class*=ot] {
+  box-shadow: 0 0 5px 0 #000;
+}
+
+/* Additional:
+    [type|=word] - starts with word
+    [data-id^=phrase] - starts with phrase
+    [name$=phrase] - ends with phrase
+ */
+
+
+/* Before and After: */
+.before-and-after:before {
+  /* Content is required */
+  content: ' ';
+  display: block;
+  background-color: green;
+  border: 1px solid orange;
+  height: 20px;
+}
+
+.before-and-after:after {
+  /* Content is required */
+  content: ' ';
+  display: block;
+  background-color: red;
+  border: 1px solid black;
+  height: 20px;
+}

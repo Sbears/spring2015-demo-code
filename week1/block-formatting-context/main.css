@@ -1,0 +1,53 @@
+/* Text: */
+.media-image {
+  float: left;
+  margin-right: 15px;
+}
+
+.media-text {
+  /* Force a BFC */
+  overflow: auto;
+}
+
+
+/* Floats: */
+.float-contain {
+  background-color: grey;
+
+  /* Force a BFC */
+  overflow: hidden;
+}
+
+.item {
+  float: left;
+  width: 100px;
+  background-color: red;
+  margin: 10px;
+}
+
+
+/* Containing Margins: */
+.header-contain {
+  background-color: red;
+
+  /* Force a BFC: */
+  overflow: hidden;
+}
+
+
+/* 3-Column Layout */
+.left-column {
+  background-color: blue;
+  width: 75px;
+  float: left;
+}
+.right-column {
+  background-color: green;
+  width: 75px;
+  float: right;
+}
+
+.content {
+  background-color: grey;
+  overflow: hidden;
+}
