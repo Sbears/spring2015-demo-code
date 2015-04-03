@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Responsive Design</title>
+    <link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.1/normalize.min.css">
+    <link rel="stylesheet" type="text/css" href="main.css">
+
+    <!-- Control the mobile browser -->
+    <meta name="viewport" content="user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, width=device-width">
+  </head>
+  <body>
+
+    <div class="container-percent">
+      <div class="col-1">
+        col 1
+      </div>
+      <div class="col-2">
+        col 2
+      </div>
+    </div>
+
+
+    <div class="font-container">
+      <h1>
+        Header
+        <span class="subheader">
+          subheader
+          <span class="subheader">
+            subheader 2
+            <span class="subheader-alt">
+              subheader 3
+            </span>
+          </span>
+        </span>
+      </h1>
+    </div>
+
+    <!-- Add support for progressive enhancement.
+        This will add classes to the HTML element
+        if the tests we select on modernizr.com
+        are passed. -->
+    <script src="modernizr.js"></script>
+  </body>
+</html>

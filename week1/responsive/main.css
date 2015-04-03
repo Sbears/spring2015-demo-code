@@ -1,0 +1,66 @@
+
+/* set a base font size */
+html {
+  font-size: 12px;
+}
+
+.container-percent {
+  background-color: grey;
+  /* width: 75%; */
+
+  /* This will prevent the element
+  from ever getting larger than the
+  specified value. */
+  max-width: 300px;
+
+  margin: 0 20px;
+  padding: 10px;
+  overflow: hidden;
+}
+
+.col-1 {
+  float: left;
+  width: 50%;
+  background-color: red;
+}
+.col-2 {
+  float: left;
+  width: 50%;
+  background-color: blue;
+}
+
+
+/* FONTS */
+h1 {
+  font-size: 3em;
+}
+.subheader {
+  font-size: .5em;
+}
+.subheader-alt {
+  font-size: 1rem;
+}
+
+
+/* Media Queries */
+@media screen and (min-width: 100px) {
+  body {
+    background-color: green;
+  }
+
+  .container-percent {
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 200px) {
+  body {
+    background-color: peru;
+  }
+}
+
+
+/* Progressive Enhancement */
+html.borderradius .container-percent {
+  border-radius: 20px;
+}
