@@ -1,0 +1,9 @@
+ternary
+
+callbacks - map, filter, reduce
+
+this and that
+
+Math, time, date
+
+JSON.parse, JSON.stringify
