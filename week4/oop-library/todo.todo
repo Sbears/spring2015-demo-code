@@ -1,0 +1,17 @@
+Prototype:
+  ☐ Form for adding a new beer to a library
+  ☐ Ability to remove a beer from a library
+  ☐ Update the addBeer method to take multiple arguments dynamically
+
+＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿
+Archive:
+  ✔ Create the base beer class @done(2015-04-21 09:11) @project(Prototype)
+  ✔ Beer class should have name, brand, style, abv, and origin properties @done(2015-04-21 09:14) @project(Prototype)
+  ✔ Beer class should have a render method that allows us to render to page @done(2015-04-21 09:40) @project(Prototype)
+  ✔ Create beer library class @done(2015-04-21 09:46) @project(Prototype)
+  ✔ Method on library for adding beers to list @done(2015-04-21 09:50) @project(Prototype)
+  ✔ Beer library should maintain an array of beers @done(2015-04-21 09:50) @project(Prototype)
+  ✔ Beer library should be able to render itself AND it's beers @done(2015-04-21 10:08) @project(Prototype)
+  ✔ Beer library can support having its own name property @done(2015-04-21 10:08) @project(Prototype)
+  ✔ Adding a new beer should update the list @done(2015-04-21 10:31) @project(Prototype)
+  ✔ Pre-render the beer on creation instead of relying on calling the render method manually @done(2015-04-21 10:31) @project(Prototype)

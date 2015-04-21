@@ -1,0 +1,35 @@
+/* Hide the templates from initial view */
+#templates {
+  display: none;
+}
+
+/* Brewpedia Module */
+.brewpedia {
+  border: 1px solid #CCC;
+  margin: 10px;
+  padding: 10px;
+}
+
+.brewpedia-name {
+  margin: 0;
+  padding: 0 0 10px 0;
+  border-bottom: 1px solid #CCC;
+}
+
+.beer-list {
+  margin-left: 10px;
+}
+
+
+/* Beer Items */
+.beer {
+  border: 1px solid #CCC;
+  border-left: 3px solid #CCC;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 0 5px 5px 0;
+}
+
+.beer-name {
+  margin: 0 0 10px 0;
+}

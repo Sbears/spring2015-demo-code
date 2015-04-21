@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Beer Library</title>
+    <link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.1/normalize.min.css">
+    <link rel="stylesheet" type="text/css" href="main.css">
+  </head>
+  <body>
+
+    <div id="templates">
+      
+      <!-- Brewpedia Template -->
+      <div id="tpl-brewpedia">
+        <h1 class="brewpedia-name">Brewpedia Name</h1>
+        <div class="beer-list"></div>
+      </div>
+
+      <!-- Individual Beer Template -->
+      <div id="tpl-beer">
+        <h3 class="beer-name">Beer Name</h3>
+        <div>
+          <em>
+            <span class="beer-brand">Beer Brand</span> -
+            <span class="beer-origin">Beer Origin</span>
+          </em>
+        </div>
+        <div>
+          <strong>Style: </strong> <span class="beer-style">Beer Style</span>
+        </div>
+        <div>
+          <strong>ABV: </strong> <span class="beer-abv">Beer ABV</span>%
+        </div>
+      </div>
+
+    </div>
+
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.7.0/underscore-min.js"></script>
+    <script src="main.js"></script>
+
+  </body>
+</html>
