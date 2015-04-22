@@ -1,0 +1,9 @@
+call, apply, bind. When and why to use?
+
+subclasses, subclass methods - implementing
+
+this.el?
+
+methods to iterate over objects' own properties
+
+public methods, private methods, and static methods
