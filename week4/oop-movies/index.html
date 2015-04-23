@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Movies</title>
+    <link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.1/normalize.min.css">
+    <link rel="stylesheet" type="text/css" href="main.css">
+  </head>
+  <body>
+
+    <!-- Templates bank. Hidden in CSS -->
+    <div id="templates">
+
+      <!-- Template for each movie library -->
+      <div id="movie-library-tpl">
+        <h2 class="library-name">Library Name</h2>
+        <form class="new-movie-form">
+          <input type="text" name="movie-title" placeholder="Movie Title">
+          <input type="text" name="movie-description" placeholder="Movie Description">
+          <input type="submit">
+        </form>
+        <ul class="movie-list"></ul>
+      </div>
+
+      <!-- Template for each movie. This is an LI because it will eventually
+      end up inside of a UL as seen in the library template -->
+      <li id="movie-tpl">
+        <h4 class="movie-title">Movie Title</h4>
+        <em class="movie-description">Movie Description</em>
+      </li>
+
+    </div>
+
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="main.js"></script>
+
+  </body>
+</html>
