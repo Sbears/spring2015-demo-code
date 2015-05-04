@@ -1,0 +1,28 @@
+{
+  "dependencies": {
+    "underscore": "^1.8.3"
+  },
+  "name": "npm-intro",
+  "version": "1.0.0",
+  "description": "It's a test of NPM",
+  "main": "app.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "github.com/RefactorU/..."
+  },
+  "keywords": [
+    "npm",
+    "demonstration",
+    "refactoru"
+  ],
+  "author": "Chris Rolfs",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RefactorU/.../issues"
+  },
+  "homepage": "https://github.com/RefactorU/..."
+}
