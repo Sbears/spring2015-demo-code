@@ -1,0 +1,39 @@
+doctype html
+html(lang='en')
+	head
+		meta(charset="utf-8")
+		title Jade Demonstration
+		
+    //- This is a placeholder. When this file is extended,
+        the placeholder can be given content which will
+        be rendered here.
+		block headerStyles
+
+	body
+    //- Normal elements start with the tag and then a space
+        and then the actual contents. Indentation detirmines
+        parent-child relationships.
+		h1 Hello World
+
+    //- You can define classes with the shorthand syntax like below.
+		p.class1.class2.class3 My Paragraph tag
+
+    //- IDs also can use the shorthand
+		p#my-paragraph.class1.class2 This is an id'd paragraph
+
+    //- Attributes are added using parentheses. You don't
+        need to put the commas in, but whatever you decide,
+        be consistent.
+		input(type="text", placeholder="Username")
+
+    //- Without a tagname, the default is 'div'
+		.container
+
+      //- This is a block for holding page content
+			block content
+				
+		
+    //- Loading in a client-side script file, which would be found
+        in the 'public' directory.
+		script(src="/main.js")
+		

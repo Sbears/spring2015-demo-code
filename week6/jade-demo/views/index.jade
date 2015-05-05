@@ -1,0 +1,46 @@
+//- This tells the compiler that in order to render
+    this file, it will need to use the content defined
+    in the asked-for file (in this case layout.jade)
+extends layout
+
+//- The layout defines a placeholder block called headerStyles,
+    so we'll decide what content goes there
+block headerStyles
+	link(href="/main.css", rel="stylesheet")
+
+//- Here we define the content for the 'content' block in the layout.
+block content
+	h1 Hello Boulder!
+	
+  //- This is a form that will actually be submitted to the server
+      and a response will be handled there (in app.js). This form will
+      use the 'post' method
+	form(action="/formSubmit", method="post")
+		input(type="text", placeholder="username...", name="username")
+		input(type="submit")
+	
+  //- One way to use variables in jade is with #{variable name}
+	h2 You are visitor number #{counterJade}
+	
+  //- We can do if-statements!
+	if counterJade % 2 === 0
+		h1 You win a million dollars!
+	
+  //- We can do for-loops!
+	ul
+		for user in usersJade
+			li(class=user.name) User: #{user.name}
+			li= user.name.toUpperCase()
+
+  //- This is for multi-line content
+	p line 1
+		| line 2
+		| line 3
+
+  //- This too. Everything that is a 'child' of this
+      dotted element will be considered text.
+	p.
+		This is all going to be text of the paragraph
+		and can span multiple lines
+		if you'd like <em>this would be emphasized</em>
+	
