@@ -1,0 +1,9 @@
+extends layout
+
+block content
+	h1 Hello from the Zimbabwe National Roller Derby Team!
+
+	for person in team
+		a(href='/schedule/' + person.alias)
+			h2 #{person.name} "#{person.alias}"
+			img(src='/images/' + person.alias + '.jpg' width=200)

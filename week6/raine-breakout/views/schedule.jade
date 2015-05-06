@@ -1,0 +1,31 @@
+extends layout
+
+block content
+	h1 Schedule an appointment with #{person.name} "#{person.alias}"
+	img(src='/images/' + person.alias + '.jpg' width=200)
+
+	table
+		thead
+			tr
+				td Monday
+				td Tuesday
+				td Wednesday
+				td Thursday
+				td Friday
+				td Saturday
+				td Sunday
+		tbody
+			for hour in _.range(8)
+				tr
+					for day in _.range(7)
+						td
+							if day%2
+								span Busy
+							else
+								a(href='/book/' + person.alias + '?date=' + day + '&time=' + hour) Open!
+
+//- block styles
+//- 	<link
+
+//- block scripts
+//- 	<script src="">
