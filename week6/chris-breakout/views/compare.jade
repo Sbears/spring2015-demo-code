@@ -1,0 +1,11 @@
+extends layout
+
+block content
+  h1 Comparing:
+
+  for juice in results
+    div(style="width: #{100/results.length}%; float: left;")
+      h3= juice.name
+      ul
+        for ingredient in juice.ingredients
+          li= ingredient

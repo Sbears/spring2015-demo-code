@@ -1,0 +1,39 @@
+extends layout
+
+block content
+  h1 Juice List
+
+  form(action="/search", method="post")
+    input(type="text", placeholder="Term to find", name="term")
+    input(type="submit")
+  
+  form(action="/addJuice", method="post")
+    input(type="text", placeholder="Juice Recipe Name...", name="name")
+    input(type="text", placeholder="Ingredients", name="ingredients")
+    input(type="submit")
+
+  form(action="/compare", method="post")
+    ul
+      //-for juice, i in juices
+        //-li
+          //-strong #{juice.name}
+          //-//- Short hand syntax for "the only content of this
+          //-//- anchor tag is the button".
+          //-a(href="/delete/#{i}"): button Delete Juice
+          //-a(href="/view/#{i}"): button View Juice
+          //-ul
+            //-for ingredient in juice.ingredients
+              //-li #{ingredient}
+      for juice in juices
+        li
+          input(type="checkbox", name="compare", value=juice.id)
+          strong #{juice.name}
+          //- Short hand syntax for "the only content of this
+          //- anchor tag is the button".
+          a(href="/delete/#{juice.id}") Delete Juice
+          a(href="/view/#{juice.id}") View Juice
+          ul
+            for ingredient in juice.ingredients
+              li #{ingredient}
+
+    input(type="submit", value="Compare")
