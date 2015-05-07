@@ -1,0 +1,16 @@
+extends layout
+
+block content
+  h1 Exotic Pets
+
+  form(action="/addPet", method="post")
+    input(type="text", placeholder="Animal Name", name="name")
+    input(type="text", placeholder="Url of image", name="imageUrl")
+    input(type="submit")
+
+  ul
+    for pet in allPets
+      li
+        a(href="/view/#{pet.slug}")= pet.name
+        |  &raquo; 
+        a(href="/delete/#{pet.slug}") Delete
