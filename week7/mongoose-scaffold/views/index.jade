@@ -1,0 +1,28 @@
+extends layout
+
+block content
+  h1 Cat Library
+
+  //- Form for submitting a new cat to the DB
+  form(action="catAdd", method="post")
+    input(type="text", name="name", placeholder="Cat name")
+    input(type="text", name="color", placeholder="Cat color")
+    input(type="text", name="weight", placeholder="Cat weight")
+    input(type="text", name="traits", placeholder="Cat traits")
+    input(type="submit")
+
+  //- Render our list of cats and all their information
+  ul
+    for cat in cats
+      li
+        strong= cat.name
+        | &nbsp;
+        em is a #{cat.weight}lbs #{cat.color} cat
+        | &nbsp;
+        //- This is helpful because every cat in our collection
+        //- automatically receives a unique '_id' property. We
+        //- can then use it to specifically identify an individual cat.
+        a(href="/delete/#{cat._id}") Delete cat
+        ul
+          for trait in cat.traits
+            li= trait
