@@ -1,0 +1,13 @@
+extends layout
+
+block content
+  h1 Hello Ajax!
+
+  //- Form for making post requests to the server
+  form#client-form
+    input(type="text", name="message", placeholder="Message")
+    input(type="submit")
+
+  //- Checking out AJAX Get requests
+  button#client-button Click me!
+  ul#responses

@@ -1,0 +1,17 @@
+extends layout
+
+block content
+  h1 Hello Monsters!
+  
+  //- Helper button for logging a list of all monsters
+      in the database
+  button#get-monsters Get all monsters!
+
+  //- Form for adding new monsters
+  form#new-monster
+    input(type="text", name="name", placeholder="Monster name")
+    input(type="text", name="scaryFactor", placeholder="Scary factor")
+    input(type="submit")
+
+  
+
