@@ -1,0 +1,21 @@
+extends layout
+
+block content
+	.container
+		h1 Hi Kevin!
+		table.table.table-striped
+			thead
+				tr
+					th Name
+					th Color
+					th Description
+					th Age
+					th Quantity
+			tbody
+				for grape in grapes
+					tr
+						td= grape.name
+						td= grape.color
+						td= grape.description
+						td= grape.age
+						td= grape.quantity
