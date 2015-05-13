@@ -1,0 +1,21 @@
+extends layout
+
+block content
+  h1 Car Sandbox
+
+  h3 Add a Car
+  form#new-car(action="/addCar", method="post")
+    input(type="text", name="name", placeholder="Car name...")
+    input(type="text", name="imageUrl", placeholder="Car imageUrl...")
+    input(type="submit")
+
+  h3 All Cars
+  - var directions = ['up', 'right', 'down', 'left']
+  .car-sandbox
+    for car in cars
+      .car(style="top: #{car.position.top}px; left: #{car.position.left}px;")
+        img(src=car.imageUrl, style="transform: rotate(#{car.rotation}deg);")
+        .controls
+          for direction in directions
+            a(class="direction #{direction}", href="/moveCar/#{car._id}/#{direction}")
+              i.fa(class="fa-angle-double-#{direction}")

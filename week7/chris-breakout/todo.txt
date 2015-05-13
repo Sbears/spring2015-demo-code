@@ -1,0 +1,14 @@
+- faux-translator (api's?)
+- ajax overview
+  - refactoring to add in ajax from non-ajax
+- more demos
+  - just tying it all together
+
+--------------------------------------------
+
+Remote Control Car Thing
+========================
+
+- Render a car to the screen
+- Give the user controls to drive it around
+- Store positions in the database

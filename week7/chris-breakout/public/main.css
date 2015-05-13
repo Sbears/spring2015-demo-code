@@ -1,0 +1,49 @@
+img {
+  max-width: 100%;
+}
+
+.car-sandbox {
+  position: relative;
+  background: url('http://fc03.deviantart.net/fs71/i/2010/291/3/4/seamless_desert_sand_texture_by_hhh316-d311qn7.jpg');
+  /*background-size: 200px;*/
+  height: 500px;
+}
+
+.car {
+  width: 150px;
+  position: absolute;
+  transition: all 0.25s;
+}
+
+.car.active {
+  border: 2px solid #f00;
+}
+
+.direction {
+  position: absolute;
+  color: #fff;
+}
+
+.direction.up {
+  top: 0;
+  left: 50%;
+  margin-left: -8px;
+}
+
+.direction.down {
+  bottom: 0;
+  left: 50%;
+  margin-left: -8px;
+}
+
+.direction.left {
+  top: 50%;
+  left: 0;
+  margin-top: -8px;
+}
+
+.direction.right {
+  top: 50%;
+  right: 0;
+  margin-top: -8px;
+}
