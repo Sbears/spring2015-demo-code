@@ -1,0 +1,6 @@
+- Upvoting will not work with ajax-created posts
+- Downvoting is not set up
+- Need to be able to sort all items by score
+- Need to be able to view the comments for a post
+  - Add comments for a post
+- Delete a post

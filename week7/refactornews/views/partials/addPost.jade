@@ -1,0 +1,20 @@
+#add-post-modal.modal.fade
+  .modal-dialog
+    .modal-content
+      .modal-header
+        button.close(data-dismiss="modal") &times;
+        h4.modal-title Add a Post
+      .modal-body
+
+        .form-group
+          input#post-title.form-control(placeholder="Title")
+        .form-group
+          input#post-author.form-control(placeholder="Author")
+        .form-group
+          input#post-description.form-control(placeholder="Description")
+        .form-group
+          input#post-url.form-control(placeholder="URL")
+
+      .modal-footer
+        button.btn.btn-default(data-dismiss="modal") Close
+        button#add-post.btn.btn-primary(data-loading-text="Saving...") Add Post

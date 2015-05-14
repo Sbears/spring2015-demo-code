@@ -1,0 +1,21 @@
+extends layout
+
+block content
+  h1 RefactorNews
+  
+  button.btn.btn-primary(data-toggle="modal", data-target="#add-post-modal") Add a Post
+
+  .post-container
+    for post in posts
+      .post.row(data-id="#{post._id}")
+        .post-votes.col-sm-2.text-center
+          p: button.btn.btn-success.upvote ^
+          p.score= post.score
+          p: button.btn.btn-danger.downvote v
+        .post-content.col-sm-10
+          a.link(href=post.url): h3.title= post.title
+          p.description= post.description
+          p.date= post.postedAt
+
+
+  include partials/addPost
